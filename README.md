@@ -23,7 +23,7 @@ AWS_ACCESS_KEY_ID=TU_ACCESS_KEY
 AWS_SECRET_ACCESS_KEY=TU_SECRET_KEY
 AWS_REGION=us-east-1
 S3_BUCKET_NAME=nombre-de-tu-bucket
-PORT=3000
+PORT=3030
 ```
 
 ### 3. Arranca el servidor
@@ -53,7 +53,7 @@ Sube **una sola imagen**.
 
 **Ejemplo con curl:**
 ```bash
-curl -X POST http://localhost:3000/api/images/upload \
+curl -X POST http://localhost:3030/api/images/upload \
   -F "image=@/ruta/a/tu/foto.jpg"
 ```
 
@@ -79,7 +79,7 @@ Sube **hasta 10 imágenes** a la vez.
 
 **Ejemplo con curl:**
 ```bash
-curl -X POST http://localhost:3000/api/images/upload-multiple \
+curl -X POST http://localhost:3030/api/images/upload-multiple \
   -F "images=@foto1.jpg" \
   -F "images=@foto2.png"
 ```
@@ -106,7 +106,7 @@ Elimina una imagen del bucket.
 
 **Ejemplo con curl:**
 ```bash
-curl -X DELETE http://localhost:3000/api/images \
+curl -X DELETE http://localhost:3030/api/images \
   -H "Content-Type: application/json" \
   -d '{"key": "images/1234567-abc.jpg"}'
 ```

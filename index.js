@@ -4,7 +4,7 @@ const cors = require("cors");
 const imagesRouter = require("./src/routes/images");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 
 // ── Middlewares ──────────────────────────────────────
 app.use(cors()); // permite peticiones desde cualquier origen
