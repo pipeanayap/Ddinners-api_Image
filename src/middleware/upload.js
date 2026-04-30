@@ -1,7 +1,7 @@
 const multer = require("multer");
 
 const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp", "image/gif"];
-const MAX_SIZE_MB = 5;
+const MAX_SIZE_MB = 10;
 
 const upload = multer({
   storage: multer.memoryStorage(), // se guarda en RAM antes de subir a S3
